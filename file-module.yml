@@ -1,6 +1,8 @@
----
 - name: Create a new file
-  file:
-    path: /home/ec2-user/testfile.txt
-    state: touch
-      
+  hosts: localhost
+  
+  tasks:
+    -  file:
+         path: /home/ec2-user/my-ansible-scripts/testfile.txt
+         state: touch
+         mode: u=rw,g=r,o=r
