@@ -1,0 +1,2 @@
+localhost                        ansible_connection=local
+ec2 ansible_host=ec2-52-207-244-134.compute-1.amazonaws.com     ansible_connection=local
